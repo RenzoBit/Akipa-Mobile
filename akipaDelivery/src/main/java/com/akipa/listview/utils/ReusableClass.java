@@ -10,28 +10,24 @@ import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
 
 
-public class ReusableClass 
-{
+public class ReusableClass {
 	public static String base_url = "http://www.renzovilela.tk/akipa/rest/";
 	public static String asset_url = "http://www.renzovilela.tk/akipa/assets/images/platos/";
-	
-	public static boolean isConnectingToInternet(Activity activity)
-	{
+
+	public static boolean isConnectingToInternet(Activity activity) {
 		ConnectivityManager connectivity = (ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE);
-		if (connectivity != null) 
-		{
+		if (connectivity != null) {
 			NetworkInfo[] info = connectivity.getAllNetworkInfo();
-			if (info != null) 
-				for (int i = 0; i < info.length; i++) 
-					if (info[i].getState() == NetworkInfo.State.CONNECTED)
-					{
+			if (info != null)
+				for (int i = 0; i < info.length; i++)
+					if (info[i].getState() == NetworkInfo.State.CONNECTED) {
 						return true;
 					}
 
 		}
 		return false;
 	}
-	
+
 	//===================================================================================================================================
 	//Preference variable
 	//===================================================================================================================================
@@ -60,7 +56,7 @@ public class ReusableClass
 	}
 
 	public static Typeface getFontStyle(Context c) {
-		return Typeface.createFromAsset(c.getAssets(),"fonts/theinhardtthin-webfont-webfont.ttf");
+		return Typeface.createFromAsset(c.getAssets(), "fonts/theinhardtthin-webfont-webfont.ttf");
 	}
 
 

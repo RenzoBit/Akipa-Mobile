@@ -29,7 +29,7 @@ import com.akipa.akipadelivery.R;
 import com.akipa.navigation.utils.NavDrawerItem;
 import com.akipa.navigation.utils.NavDrawerListAdapter;
 
-public class DashBoardActivity extends Activity{
+public class DashBoardActivity extends Activity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -46,7 +46,7 @@ public class DashBoardActivity extends Activity{
 
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private NavDrawerListAdapter adapter;
-	
+
 	BroadcastReceiver mBroadcastReceiver;
 
 	@Override
@@ -59,19 +59,17 @@ public class DashBoardActivity extends Activity{
 		//BroadCust for fragment
 		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-		mBroadcastReceiver = new BroadcastReceiver() 
-		{
+		mBroadcastReceiver = new BroadcastReceiver() {
 			@Override
-			public void onReceive(Context context, Intent intent) 
-			{
+			public void onReceive(Context context, Intent intent) {
 				Bundle extra = intent.getExtras();
-		        String plateId = extra.getString("plateId");  
-		        
+				String plateId = extra.getString("plateId");
+
 				Fragment fragment = new PlateDetailsFragment(DashBoardActivity.this, Integer.parseInt(plateId));
-	            FragmentManager fragmentManager = (DashBoardActivity.this).getFragmentManager();
-	            fragmentManager.popBackStack("back", FragmentManager.POP_BACK_STACK_INCLUSIVE);
-	            
-	            fragmentManager.beginTransaction().add(R.id.frame_container, fragment).addToBackStack(plateId).commit();
+				FragmentManager fragmentManager = (DashBoardActivity.this).getFragmentManager();
+				fragmentManager.popBackStack("back", FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
+				fragmentManager.beginTransaction().add(R.id.frame_container, fragment).addToBackStack(plateId).commit();
 			}
 		};
 		this.registerReceiver(mBroadcastReceiver, new IntentFilter("start.fragment.action"));
@@ -125,7 +123,7 @@ public class DashBoardActivity extends Activity{
 				R.drawable.ic_drawer, //nav menu toggle icon
 				R.string.app_name, // nav drawer open - description for accessibility
 				R.string.app_name // nav drawer close - description for accessibility
-				) {
+		) {
 			public void onDrawerClosed(View view) {
 				getActionBar().setTitle(mTitle);
 				// calling onPrepareOptionsMenu() to show action bar icons
@@ -145,20 +143,19 @@ public class DashBoardActivity extends Activity{
 			displayView(0);
 		}
 	}
-	
-	public void fragmentClick(View v) 
-	{
+
+	public void fragmentClick(View v) {
 		//Do nothing
 	}
 
 	/**
 	 * Slide menu item click listener
-	 * */
+	 */
 	private class SlideMenuClickListener implements
-	ListView.OnItemClickListener {
+			ListView.OnItemClickListener {
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position,
-				long id) {
+								long id) {
 			// display view for selected nav drawer item
 			displayView(position);
 		}
@@ -178,47 +175,47 @@ public class DashBoardActivity extends Activity{
 		}
 		// Handle action bar actions click
 		switch (item.getItemId()) {
-		case R.id.action_settings:
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
+			case R.id.action_settings:
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
 	}
 
 	/**
 	 * Diplaying fragment view for selected nav drawer list item
-	 * */
+	 */
 	private void displayView(int position) {
 		// update the main content by replacing fragments
 		Fragment fragment = null;
 		switch (position) {
-		case 0:
-			fragment = new PlateListsFragment(this);
-			break;
-		case 1:
-			fragment = new HomeFragment();
-			break;
-		case 2:
-			fragment = new HomeFragment();
-			break;
-		case 3:
-			fragment = new HomeFragment();
-			break;
-		case 4:
-			fragment = new HomeFragment();
-			break;
-		case 5:
-			fragment = new HomeFragment();
-			break;
+			case 0:
+				fragment = new PlateListsFragment(this);
+				break;
+			case 1:
+				fragment = new HomeFragment();
+				break;
+			case 2:
+				fragment = new HomeFragment();
+				break;
+			case 3:
+				fragment = new HomeFragment();
+				break;
+			case 4:
+				fragment = new HomeFragment();
+				break;
+			case 5:
+				fragment = new HomeFragment();
+				break;
 
-		default:
-			break;
+			default:
+				break;
 		}
 
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
-			.replace(R.id.frame_container, fragment).commit();
+					.replace(R.id.frame_container, fragment).commit();
 
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
@@ -255,7 +252,7 @@ public class DashBoardActivity extends Activity{
 		// Pass any configuration change to the drawer toggls
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub

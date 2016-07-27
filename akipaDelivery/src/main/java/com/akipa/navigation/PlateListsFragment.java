@@ -53,7 +53,7 @@ public class PlateListsFragment extends Fragment {
 	Spinner CategorySpinner;
 	private ProgressDialog pgLogin;
 
-	HashMap<String,String> spinnerMap = new HashMap<String, String>();
+	HashMap<String, String> spinnerMap = new HashMap<String, String>();
 	String[] spinnerArray;
 
 	// ArrayList for Listview
@@ -69,12 +69,12 @@ public class PlateListsFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-		View rootView   = inflater.inflate(R.layout.fragment_plate, container, false);
-		lv          	= (ListView)rootView.findViewById(R.id.list_view);
-		inputSearch 	= (EditText) rootView.findViewById(R.id.inputSearch);
-		CategorySpinner = (Spinner)rootView.findViewById(R.id.CategorySpinner);
+		View rootView = inflater.inflate(R.layout.fragment_plate, container, false);
+		lv = (ListView) rootView.findViewById(R.id.list_view);
+		inputSearch = (EditText) rootView.findViewById(R.id.inputSearch);
+		CategorySpinner = (Spinner) rootView.findViewById(R.id.CategorySpinner);
 
-		
+
 		//=======================================================================================
 		//Category List
 		//=======================================================================================
@@ -93,9 +93,7 @@ public class PlateListsFragment extends Fragment {
 		//END Category List
 		//=======================================================================================
 
-		
-		
-		
+
 		//=======================================================================================
 		//Spinner onChange
 		//=======================================================================================
@@ -105,8 +103,7 @@ public class PlateListsFragment extends Fragment {
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 				Log.i("TAG", "Value Selected: " + spinnerMap.get(spinnerArray[position]));
 
-				if(spinnerMap.get(spinnerArray[position]) != null)
-				{
+				if (spinnerMap.get(spinnerArray[position]) != null) {
 					//Showing progress dialog 
 					pgLogin = new ProgressDialog(getActivity());
 					pgLogin.setMessage("Please wait updating your plate lists ...");
@@ -125,13 +122,11 @@ public class PlateListsFragment extends Fragment {
 				// your code here
 			}
 		});
-		
+
 		//=======================================================================================
 		//END Spinner onChange
 		//=======================================================================================
 
-
-		
 
 		//=======================================================================================
 		//Edittext Filter 
@@ -150,7 +145,7 @@ public class PlateListsFragment extends Fragment {
 
 			@Override
 			public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
-					int arg3) {
+										  int arg3) {
 				// TODO Auto-generated method stub
 
 			}
@@ -160,13 +155,12 @@ public class PlateListsFragment extends Fragment {
 				// TODO Auto-generated method stub							
 			}
 		});
-		
+
 		//=======================================================================================
 		//Edittext Filter 
 		//=======================================================================================
 
-		
-		
+
 		return rootView;
 	}
 
@@ -174,29 +168,26 @@ public class PlateListsFragment extends Fragment {
 	//Get Category List
 	//===================================================================================================================================
 
-	private class MyAsyncTaskForCategory extends AsyncTask<String, Integer, Double>{
+	private class MyAsyncTaskForCategory extends AsyncTask<String, Integer, Double> {
 
 		String responseBody;
 		int responseCode;
+
 		@Override
 		protected Double doInBackground(String... params) {
 			postData();
 			return null;
 		}
 
-		protected void onPostExecute(Double result)
-		{
+		protected void onPostExecute(Double result) {
 			//The HTTP status messages in the 200 series reflect that the request was successful. 
-			if(responseCode == 200)
-			{
-				Log.d("Log",responseBody);
+			if (responseCode == 200) {
+				Log.d("Log", responseBody);
 				processLoginResponce(responseBody);
 			}
 			//Not getting proper response
-			else
-			{
-				if (pgLogin.isShowing()) 
-				{
+			else {
+				if (pgLogin.isShowing()) {
 					pgLogin.cancel();
 					pgLogin.dismiss();
 				}
@@ -205,7 +196,7 @@ public class PlateListsFragment extends Fragment {
 
 		}
 
-		protected void onProgressUpdate(Integer... progress){
+		protected void onProgressUpdate(Integer... progress) {
 
 		}
 
@@ -214,17 +205,15 @@ public class PlateListsFragment extends Fragment {
 			HttpClient httpclient = new DefaultHttpClient();
 			HttpGet httpGet = new HttpGet(ReusableClass.base_url + "lista_categorias_con_platos");
 
-			try 
-			{
+			try {
 				// Execute HTTP Post Request
 				HttpResponse response = httpclient.execute(httpGet);
 
 				responseCode = response.getStatusLine().getStatusCode();
 				responseBody = EntityUtils.toString(response.getEntity());
-			} 
-			catch (Throwable t ) {
-				Log.d("Error Time of Login",t+"");
-			} 
+			} catch (Throwable t) {
+				Log.d("Error Time of Login", t + "");
+			}
 		}
 	}
 
@@ -235,8 +224,7 @@ public class PlateListsFragment extends Fragment {
 	//===================================================================================================================================
 	//processing the XML got from server 
 	//===================================================================================================================================
-	private void processLoginResponce(String responceFromServer) 
-	{
+	private void processLoginResponce(String responceFromServer) {
 
 		/*[{"idcategoria":"7","nombre":"Aves"},{"idcategoria":"8","nombre":"Carnes"},{"idcategoria":"20","nombre":"Cervezas"},
 		 * {"idcategoria":"4","nombre":"Copas Marinas"}, {"idcategoria":"6","nombre":"Del Mar"},
@@ -246,13 +234,11 @@ public class PlateListsFragment extends Fragment {
 		 * {"idcategoria":"9","nombre":"Teque\u00f1os ni taca\u00f1os ni peque\u00f1os"}]
 		 */
 
-		try 
-		{
+		try {
 			JSONArray jsonarray = new JSONArray(responceFromServer);
 			spinnerArray = new String[jsonarray.length()];
 
-			for(int i=0; i<jsonarray.length(); i++)
-			{
+			for (int i = 0; i < jsonarray.length(); i++) {
 				JSONObject obj = jsonarray.getJSONObject(i);
 
 				String idcategoria = obj.getString("idcategoria");
@@ -262,25 +248,21 @@ public class PlateListsFragment extends Fragment {
 				spinnerArray[i] = nombre;
 			}
 
-			ArrayAdapter<String> adapter =new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item, spinnerArray);
+			ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, spinnerArray);
 			adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 			CategorySpinner.setAdapter(adapter);
 
 			adapter.notifyDataSetChanged();
 
-			if (pgLogin.isShowing()) 
-			{
+			if (pgLogin.isShowing()) {
 				pgLogin.cancel();
 				pgLogin.dismiss();
 			}
-		} 
-		catch (JSONException e) 
-		{
+		} catch (JSONException e) {
 			e.printStackTrace();
-		}   
+		}
 
-		if (pgLogin.isShowing()) 
-		{
+		if (pgLogin.isShowing()) {
 			pgLogin.cancel();
 			pgLogin.dismiss();
 		}
@@ -295,29 +277,26 @@ public class PlateListsFragment extends Fragment {
 	//Get Category List
 	//===================================================================================================================================
 
-	private class MyAsyncTaskForPlateList extends AsyncTask<String, Integer, Double>{
+	private class MyAsyncTaskForPlateList extends AsyncTask<String, Integer, Double> {
 
 		String responseBody;
 		int responseCode;
+
 		@Override
 		protected Double doInBackground(String... params) {
 			postData(params[0]);
 			return null;
 		}
 
-		protected void onPostExecute(Double result)
-		{
+		protected void onPostExecute(Double result) {
 			//The HTTP status messages in the 200 series reflect that the request was successful. 
-			if(responseCode == 200)
-			{
-				Log.d("Log",responseBody);
+			if (responseCode == 200) {
+				Log.d("Log", responseBody);
 				processCategoryResponce(responseBody);
 			}
 			//Not getting proper response
-			else
-			{
-				if (pgLogin.isShowing()) 
-				{
+			else {
+				if (pgLogin.isShowing()) {
 					pgLogin.cancel();
 					pgLogin.dismiss();
 				}
@@ -326,26 +305,24 @@ public class PlateListsFragment extends Fragment {
 
 		}
 
-		protected void onProgressUpdate(Integer... progress){
+		protected void onProgressUpdate(Integer... progress) {
 
 		}
 
 		public void postData(String categoryId) {
 			// Create a new HttpClient and Post Header
 			HttpClient httpclient = new DefaultHttpClient();
-			HttpGet httpGet = new HttpGet(ReusableClass.base_url + "lista_platos_por_idcategoria?idcategoria="+categoryId);
+			HttpGet httpGet = new HttpGet(ReusableClass.base_url + "lista_platos_por_idcategoria?idcategoria=" + categoryId);
 
-			try 
-			{
+			try {
 				// Execute HTTP Post Request
 				HttpResponse response = httpclient.execute(httpGet);
 
 				responseCode = response.getStatusLine().getStatusCode();
 				responseBody = EntityUtils.toString(response.getEntity());
-			} 
-			catch (Throwable t ) {
-				Log.d("Error Time of Login",t+"");
-			} 
+			} catch (Throwable t) {
+				Log.d("Error Time of Login", t + "");
+			}
 		}
 	}
 
@@ -356,8 +333,7 @@ public class PlateListsFragment extends Fragment {
 	//===================================================================================================================================
 	//processing the XML got from server 
 	//===================================================================================================================================
-	private void processCategoryResponce(String responceFromServer) 
-	{
+	private void processCategoryResponce(String responceFromServer) {
 
 		/*[{"idplato":"53","nombre":"Risotto de Seco","precio":"35.00","calificacion":"0","relevancia":"0","imagen":"53","categoria":"Carnes"},
 		 * {"idplato":"52","nombre":"Spaghetti a la Huanca\u00edna con Lomo Saltado","precio":"37.00","calificacion":"0","relevancia":"0","imagen":"52","categoria":"Carnes"},
@@ -365,22 +341,20 @@ public class PlateListsFragment extends Fragment {
 		 * {"idplato":"50","nombre":"Lomo Saltado","precio":"33.00","calificacion":"0","relevancia":"0","imagen":"50","categoria":"Carnes"}]
 		 */
 
-		try 
-		{
+		try {
 			JSONArray jsonarray = new JSONArray(responceFromServer);
 			arraylist.clear();
 
-			for(int i=0; i<jsonarray.length(); i++)
-			{
+			for (int i = 0; i < jsonarray.length(); i++) {
 				JSONObject obj = jsonarray.getJSONObject(i);
 
-				String idplato 	  = obj.getString("idplato");
-				String nombre 	  = obj.getString("nombre");
-				String precio 	  = obj.getString("precio");
-				String rating 	  = obj.getString("calificacion");
+				String idplato = obj.getString("idplato");
+				String nombre = obj.getString("nombre");
+				String precio = obj.getString("precio");
+				String rating = obj.getString("calificacion");
 				String relevancia = obj.getString("relevancia");
-				String imagen 	  = obj.getString("imagen");
-				String categoria  = obj.getString("categoria");
+				String imagen = obj.getString("imagen");
+				String categoria = obj.getString("categoria");
 
 
 				ItemListPogo wp = new ItemListPogo(nombre, categoria, precio, rating, imagen, idplato);
@@ -391,14 +365,11 @@ public class PlateListsFragment extends Fragment {
 
 			lv.setAdapter(adapter);
 			adapter.notifyDataSetChanged();
-		} 
-		catch (JSONException e) 
-		{
+		} catch (JSONException e) {
 			e.printStackTrace();
-		}   
+		}
 
-		if (pgLogin.isShowing()) 
-		{
+		if (pgLogin.isShowing()) {
 			pgLogin.cancel();
 			pgLogin.dismiss();
 		}

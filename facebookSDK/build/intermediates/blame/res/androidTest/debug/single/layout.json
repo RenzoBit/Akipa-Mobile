@@ -44,12 +44,12 @@
         "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\com_facebook_picker_image.xml"
     },
     {
-        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\com_facebook_picker_activity_circle_row.xml",
-        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\com_facebook_picker_activity_circle_row.xml"
-    },
-    {
         "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\com_facebook_usersettingsfragment.xml",
         "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\com_facebook_usersettingsfragment.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\com_facebook_picker_activity_circle_row.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\com_facebook_picker_activity_circle_row.xml"
     },
     {
         "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\com_facebook_picker_title_bar.xml",

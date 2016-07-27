@@ -26,7 +26,7 @@ import android.widget.Toast;
 
 import com.akipa.akipadelivery.R;
 
-public class RegistrationActivity extends Activity{
+public class RegistrationActivity extends Activity {
 
 	EditText editTextFirstName;
 	EditText editTextLastName;
@@ -44,21 +44,20 @@ public class RegistrationActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.registration_activity);
 
-		editTextFirstName     = (EditText) findViewById(R.id.editTextFirstName);
-		editTextLastName 	  = (EditText) findViewById(R.id.editTextLastName);
-		radioSexGroup	      = (RadioGroup) findViewById(R.id.radioSex);
-		editTextEmailAddress  = (EditText) findViewById(R.id.editTextEmailAddress);
-		editTextPhoneNo 	  = (EditText) findViewById(R.id.editTextPhoneNo);
-		editTextPassword 	  = (EditText) findViewById(R.id.editTextPassword);
-		editTextFbId     	  = (EditText) findViewById(R.id.editTextFbId);
+		editTextFirstName = (EditText) findViewById(R.id.editTextFirstName);
+		editTextLastName = (EditText) findViewById(R.id.editTextLastName);
+		radioSexGroup = (RadioGroup) findViewById(R.id.radioSex);
+		editTextEmailAddress = (EditText) findViewById(R.id.editTextEmailAddress);
+		editTextPhoneNo = (EditText) findViewById(R.id.editTextPhoneNo);
+		editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+		editTextFbId = (EditText) findViewById(R.id.editTextFbId);
 
-		Bundle extras = getIntent().getExtras(); 
-		if (extras != null) 
-		{
+		Bundle extras = getIntent().getExtras();
+		if (extras != null) {
 			editTextFirstName.setText(extras.getString("first_name"));
 			editTextLastName.setText(extras.getString("last_name"));
 
-			if(extras.getString("sex").equalsIgnoreCase("male"))
+			if (extras.getString("sex").equalsIgnoreCase("male"))
 				radioSexGroup.check(R.id.radioMale);
 			else
 				radioSexGroup.check(R.id.radioFemale);
@@ -69,20 +68,17 @@ public class RegistrationActivity extends Activity{
 	}
 
 	@Override
-	public void onBackPressed() 
-	{
+	public void onBackPressed() {
 		Intent i = new Intent(this, MainActivity.class);
 		finish();
 		startActivity(i);
 	}
 
-	public void registerMe(View v) 
-	{
+	public void registerMe(View v) {
 		v.findViewById(R.id.buttonReg).startAnimation(AnimationUtils.loadAnimation(RegistrationActivity.this, R.anim.image_click));
 
-		Log.d("TAG","validation: " + MandatoryValidation(editTextFirstName));
-		if(!MandatoryValidation(editTextFirstName).equalsIgnoreCase("") && !MandatoryValidation(editTextLastName).equalsIgnoreCase("") && !Is_Valid_Email(editTextEmailAddress).equalsIgnoreCase("")  && !MandatoryValidation(editTextPhoneNo).equalsIgnoreCase("") && !MandatoryValidation(editTextPassword).equalsIgnoreCase(""))
-		{
+		Log.d("TAG", "validation: " + MandatoryValidation(editTextFirstName));
+		if (!MandatoryValidation(editTextFirstName).equalsIgnoreCase("") && !MandatoryValidation(editTextLastName).equalsIgnoreCase("") && !Is_Valid_Email(editTextEmailAddress).equalsIgnoreCase("") && !MandatoryValidation(editTextPhoneNo).equalsIgnoreCase("") && !MandatoryValidation(editTextPassword).equalsIgnoreCase("")) {
 			//Showing progress dialog 
 			pgLogin = new ProgressDialog(RegistrationActivity.this);
 			pgLogin.setMessage("Please wait registering you ...");
@@ -95,37 +91,32 @@ public class RegistrationActivity extends Activity{
 			int selectedId = radioSexGroup.getCheckedRadioButtonId();
 			radioSexButton = (RadioButton) findViewById(selectedId);
 
-			new MyAsyncTaskForAllEnquire().execute(editTextFirstName.getText().toString(), editTextLastName.getText().toString(), editTextEmailAddress.getText().toString(), editTextPhoneNo.getText().toString(), editTextPassword.getText().toString(), editTextFbId.getText().toString(), radioSexButton.getText().toString(),toString());
-		}
-		else
-		{
+			new MyAsyncTaskForAllEnquire().execute(editTextFirstName.getText().toString(), editTextLastName.getText().toString(), editTextEmailAddress.getText().toString(), editTextPhoneNo.getText().toString(), editTextPassword.getText().toString(), editTextFbId.getText().toString(), radioSexButton.getText().toString(), toString());
+		} else {
 			Toast.makeText(this, "Please check your credentials !!", Toast.LENGTH_LONG).show();
 		}
 	}
 
-	private class MyAsyncTaskForAllEnquire extends AsyncTask<String, Integer, Double>{
+	private class MyAsyncTaskForAllEnquire extends AsyncTask<String, Integer, Double> {
 
 		String responseBody;
 		int responseCode;
+
 		@Override
 		protected Double doInBackground(String... params) {
-			postData(params[0],params[1],params[2],params[3],params[4],params[5],params[6]);
+			postData(params[0], params[1], params[2], params[3], params[4], params[5], params[6]);
 			return null;
 		}
 
-		protected void onPostExecute(Double result)
-		{
+		protected void onPostExecute(Double result) {
 			//The HTTP status messages in the 200 series reflect that the request was successful. 
-			if(responseCode == 200)
-			{
-				Log.d("Log",responseBody);
+			if (responseCode == 200) {
+				Log.d("Log", responseBody);
 				processLoginResponce(responseBody);
 			}
 			//Not getting proper response
-			else
-			{
-				if (pgLogin.isShowing()) 
-				{
+			else {
+				if (pgLogin.isShowing()) {
 					pgLogin.cancel();
 					pgLogin.dismiss();
 				}
@@ -134,7 +125,7 @@ public class RegistrationActivity extends Activity{
 
 		}
 
-		protected void onProgressUpdate(Integer... progress){
+		protected void onProgressUpdate(Integer... progress) {
 
 		}
 
@@ -172,10 +163,9 @@ public class RegistrationActivity extends Activity{
 
 				responseCode = response.getStatusLine().getStatusCode();
 				responseBody = EntityUtils.toString(response.getEntity());
-			} 
-			catch (Throwable t ) {
-				Log.d("Error Time of Login",t+"");
-			} 
+			} catch (Throwable t) {
+				Log.d("Error Time of Login", t + "");
+			}
 		}
 	}
 	//===================================================================================================================================
@@ -183,15 +173,11 @@ public class RegistrationActivity extends Activity{
 	//===================================================================================================================================
 
 
-
-
 	//===================================================================================================================================
 	//processing the XML got from server 
 	//===================================================================================================================================
-	private void processLoginResponce(String responceFromServer) 
-	{
-		if (pgLogin.isShowing()) 
-		{
+	private void processLoginResponce(String responceFromServer) {
+		if (pgLogin.isShowing()) {
 			pgLogin.cancel();
 			pgLogin.dismiss();
 		}
@@ -205,38 +191,28 @@ public class RegistrationActivity extends Activity{
 	//===================================================================================================================================
 	//Validation
 	//===================================================================================================================================
-	
+
 	//Email
-	public String Is_Valid_Email(EditText edt) 
-	{
+	public String Is_Valid_Email(EditText edt) {
 		String valid_email = "";
-		if (edt.getText().toString().length() <= 0) 
-		{
+		if (edt.getText().toString().length() <= 0) {
 			edt.setError("It's mandatory.");
 			valid_email = "";
-		} 
-		else if (android.util.Patterns.EMAIL_ADDRESS.matcher(edt.getText().toString()).matches() == false) 
-		{
+		} else if (android.util.Patterns.EMAIL_ADDRESS.matcher(edt.getText().toString()).matches() == false) {
 			edt.setError("Invalid Email Address");
 			valid_email = "";
-		} 
-		else 
-		{
+		} else {
 			valid_email = edt.getText().toString();
 		}
 		return valid_email;
 	}
-	
-	public String MandatoryValidation(EditText edt) 
-	{
+
+	public String MandatoryValidation(EditText edt) {
 		String text = "";
-		if (edt.getText().toString().length() <= 0) 
-		{
+		if (edt.getText().toString().length() <= 0) {
 			edt.setError("It's mandatory.");
 			text = "";
-		} 
-		else 
-		{
+		} else {
 			text = edt.getText().toString();
 			edt.setError(null);
 		}

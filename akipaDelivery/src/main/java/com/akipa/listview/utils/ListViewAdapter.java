@@ -32,16 +32,15 @@ public class ListViewAdapter extends BaseAdapter {
 	LayoutInflater inflater;
 	private List<ItemListPogo> itemListPogo = null;
 	private ArrayList<ItemListPogo> arraylist;
-	public ImageLoader imageLoader; 
+	public ImageLoader imageLoader;
 
-	public ListViewAdapter(Context context, List<ItemListPogo> itemLists) 
-	{
+	public ListViewAdapter(Context context, List<ItemListPogo> itemLists) {
 		mContext = context;
 		this.itemListPogo = itemLists;
 		inflater = LayoutInflater.from(mContext);
 		this.arraylist = new ArrayList<ItemListPogo>();
 		this.arraylist.addAll(itemLists);
-		imageLoader      = new ImageLoader(mContext.getApplicationContext());
+		imageLoader = new ImageLoader(mContext.getApplicationContext());
 	}
 
 	public class ViewHolder {
@@ -69,25 +68,21 @@ public class ListViewAdapter extends BaseAdapter {
 		return position;
 	}
 
-	public View getView(final int position, View view, ViewGroup parent) 
-	{
+	public View getView(final int position, View view, ViewGroup parent) {
 		final ViewHolder holder;
-		if (view == null) 
-		{
+		if (view == null) {
 			holder = new ViewHolder();
 			view = inflater.inflate(R.layout.list_item, null);
 
-			holder.product_name  = (TextView) view.findViewById(R.id.product_name);
-			holder.name      	 = (TextView) view.findViewById(R.id.name);
-			holder.price     	 = (TextView) view.findViewById(R.id.price);
-			holder.ratingBar     = (RatingBar) view.findViewById(R.id.ratingBar);
-			holder.plateImage    = (ImageView) view.findViewById(R.id.imageViewPlateImage);
-			holder.plateId       = (TextView) view.findViewById(R.id.plateId);
+			holder.product_name = (TextView) view.findViewById(R.id.product_name);
+			holder.name = (TextView) view.findViewById(R.id.name);
+			holder.price = (TextView) view.findViewById(R.id.price);
+			holder.ratingBar = (RatingBar) view.findViewById(R.id.ratingBar);
+			holder.plateImage = (ImageView) view.findViewById(R.id.imageViewPlateImage);
+			holder.plateId = (TextView) view.findViewById(R.id.plateId);
 
 			view.setTag(holder);
-		} 
-		else 
-		{
+		} else {
 			holder = (ViewHolder) view.getTag();
 		}
 
@@ -103,10 +98,9 @@ public class ListViewAdapter extends BaseAdapter {
 		view.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View arg0) 
-			{
+			public void onClick(View arg0) {
 				Log.v("TAG", "Clicked: " + itemListPogo.get(position).getitemIdplato());
-				
+
 				Intent i = new Intent("start.fragment.action");
 				i.putExtra("plateId", itemListPogo.get(position).getitemIdplato());
 				mContext.sendBroadcast(i);
@@ -117,40 +111,25 @@ public class ListViewAdapter extends BaseAdapter {
 	}
 
 	// Filter Class
-	public void filter(String charText) 
-	{
+	public void filter(String charText) {
 		charText = charText.toLowerCase(Locale.getDefault());
 		itemListPogo.clear();
 
-		if (charText.length() == 0) 
-		{
+		if (charText.length() == 0) {
 			itemListPogo.addAll(arraylist);
-		} 
-		else
-		{
-			for (ItemListPogo wp : arraylist) 
-			{
+		} else {
+			for (ItemListPogo wp : arraylist) {
 				if (wp.getProductName().toLowerCase(Locale.getDefault())
-						.contains(charText)) 
-				{
+						.contains(charText)) {
 					itemListPogo.add(wp);
-				}
-
-				else if (wp.getItemName().toLowerCase(Locale.getDefault())
-						.contains(charText)) 
-				{
+				} else if (wp.getItemName().toLowerCase(Locale.getDefault())
+						.contains(charText)) {
 					itemListPogo.add(wp);
-				}
-
-				else if (wp.getPrecio().toLowerCase(Locale.getDefault())
-						.contains(charText)) 
-				{
+				} else if (wp.getPrecio().toLowerCase(Locale.getDefault())
+						.contains(charText)) {
 					itemListPogo.add(wp);
-				}
-
-				else if (wp.getRating().toLowerCase(Locale.getDefault())
-						.contains(charText)) 
-				{
+				} else if (wp.getRating().toLowerCase(Locale.getDefault())
+						.contains(charText)) {
 					itemListPogo.add(wp);
 				}
 			}

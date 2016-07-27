@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="nav_drawer_icons">
-        <item>@drawable/map_with_icon</item>
-        <item>@drawable/map_search</item>
-        <item>@drawable/book</item>
-        <item>@drawable/bell</item>
-        <item>@drawable/fev</item>
-    </array>
+		<item>@drawable/map_with_icon</item>
+		<item>@drawable/map_search</item>
+		<item>@drawable/book</item>
+		<item>@drawable/bell</item>
+		<item>@drawable/fev</item>
+	</array>
     <string-array name="nav_drawer_items">
-        <item>Consultar Platos</item>
-        <item>Pedidos Realizados</item>
-        <item>Consultar Cobertura</item>
-        <item>Consultar Promociones</item>
-        <item>Consultar favorito</item>
-    </string-array>
+		<item>Consultar Platos</item>
+		<item>Pedidos Realizados</item>
+		<item>Consultar Cobertura</item>
+		<item>Consultar Promociones</item>
+		<item>Consultar favorito</item>
+	</string-array>
     <color name="base_color">#380D35</color>
     <color name="base_color_light">#7A1B74</color>
     <color name="base_color_mid">#5D1658</color>
@@ -86,15 +86,15 @@
     <string name="splash_title">Freelancer.com - Bumba27</string>
     <string name="splash_url">www.androiddoc.com</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
+		<!--
+			Theme customizations available in newer API levels can go in
+			res/values-vXX/styles.xml, while customizations related to
+			backward-compatibility can go here.
+		-->
+	</style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
     <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

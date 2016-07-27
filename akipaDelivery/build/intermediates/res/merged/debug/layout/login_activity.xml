@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bg" >
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/bg"
+				android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:orientation="vertical">
 
-        <ImageView android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/logo_letter"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="40dp"/>
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/txtbox9"
-            android:layout_marginBottom="5dp"
-            android:hint="Enter Email Id" >
-        </EditText>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="40dp"
+			android:src="@drawable/logo_letter"/>
 
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword" 
-            android:background="@drawable/txtbox9"
-            android:layout_marginBottom="5dp"
-            android:hint="Enter Password"/>
+		<EditText
+			android:id="@+id/editTextEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:background="@drawable/txtbox9"
+			android:hint="Enter Email Id"
+			android:inputType="textEmailAddress">
+		</EditText>
 
-        <Button
-            android:id="@+id/buttonLogin"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Login" 
-            android:background="@color/default_button_color"
-            android:textColor="@android:color/white"
-            android:onClick="loginNow"/>
-    </LinearLayout>
+		<EditText
+			android:id="@+id/editTextPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:background="@drawable/txtbox9"
+			android:hint="Enter Password"
+			android:inputType="textPassword"/>
+
+		<Button
+			android:id="@+id/buttonLogin"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/default_button_color"
+			android:onClick="loginNow"
+			android:text="Login"
+			android:textColor="@android:color/white"/>
+	</LinearLayout>
 
 </RelativeLayout>

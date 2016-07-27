@@ -8,18 +8,18 @@
                     "startColumn": 4,
                     "startOffset": 55,
                     "endLine": 4,
-                    "endColumn": 12,
-                    "endOffset": 201
+                    "endColumn": 9,
+                    "endOffset": 192
                 },
                 "from": {
                     "file": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 225,
+                        "startColumn": 1,
+                        "startOffset": 200,
                         "endLine": 9,
-                        "endColumn": 12,
-                        "endOffset": 373
+                        "endColumn": 9,
+                        "endOffset": 339
                     }
                 }
             }

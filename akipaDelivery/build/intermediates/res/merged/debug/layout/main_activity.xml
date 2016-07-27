@@ -1,105 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    android:orientation="vertical" >
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/bg"
+				android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/base_color_transparent" >
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:background="@color/base_color_transparent">
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp"
-            android:src="@drawable/ic_launcher" />
+		<ImageView
+			android:id="@+id/imageView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingBottom="2dp"
+			android:paddingTop="2dp"
+			android:src="@drawable/ic_launcher"/>
 
-        <TextView
-            android:id="@+id/textViewFirstName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/imageView1"
-            android:text="@string/app_name"
-            android:textColor="@android:color/white"
-            android:textSize="18dp" />
-    </RelativeLayout>
+		<TextView
+			android:id="@+id/textViewFirstName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@+id/imageView1"
+			android:text="@string/app_name"
+			android:textColor="@android:color/white"
+			android:textSize="18dp"/>
+	</RelativeLayout>
 
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_letter" 
-        android:layout_marginTop="100dp"/>
+	<ImageView
+		android:id="@+id/imageViewLogo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="100dp"
+		android:src="@drawable/logo_letter"/>
 
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:orientation="vertical"
+		android:padding="5dp">
 
+		<RelativeLayout
+			android:id="@+id/fbButton"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_marginBottom="5dp"
+			android:background="@color/fb_button_color"
+			android:clickable="true"
+			android:onClick="fetchingFbData"
+			android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:orientation="vertical"
-        android:padding="5dp" >
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/fb_icon"/>
 
-        <RelativeLayout
-            android:id="@+id/fbButton"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
-            android:background="@color/fb_button_color"
-            android:padding="5dp"
-            android:clickable="true"
-            android:onClick="fetchingFbData" >
+			<TextView
+				android:id="@+id/textView2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="Facebook Registration"
+				android:textColor="@android:color/white"
+				android:textStyle="bold"/>
+		</RelativeLayout>
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/fb_icon" />
+		<Button
+			android:id="@+id/buttonRegister"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_marginBottom="5dp"
+			android:background="@color/default_button_color"
+			android:onClick="goingToRegister"
+			android:text="Email Registration"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="Facebook Registration"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/buttonRegister"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:background="@color/default_button_color"
-            android:text="Email Registration"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"
-            android:onClick="goingToRegister" />
-
-        <Button
-            android:id="@+id/buttonLogin"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:background="@color/default_button_color"
-            android:text="Login"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" 
-            android:onClick="loginNow"/>
-    </LinearLayout>
+		<Button
+			android:id="@+id/buttonLogin"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:background="@color/default_button_color"
+			android:onClick="loginNow"
+			android:text="Login"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"/>
+	</LinearLayout>
 
 </RelativeLayout>

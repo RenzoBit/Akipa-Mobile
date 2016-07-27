@@ -22,31 +22,27 @@ public class SpashScreen extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		
+
 		setContentView(R.layout.spash_screen);
-		
+
 		Animation slideUp = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_up);
-		logo_layout = (LinearLayout)findViewById(R.id.linearLayoutLogoLayout);
+		logo_layout = (LinearLayout) findViewById(R.id.linearLayoutLogoLayout);
 
 		logo_layout.setAnimation(slideUp);
 
 		new Handler().postDelayed(new Runnable() {
 			@Override
-			public void run() 
-			{
-				if (ReusableClass.getFromPreference("isLogedIn", SpashScreen.this).equalsIgnoreCase("yes")) 
-				{
+			public void run() {
+				if (ReusableClass.getFromPreference("isLogedIn", SpashScreen.this).equalsIgnoreCase("yes")) {
 					Intent i = new Intent(SpashScreen.this, DashBoardActivity.class);
 					finish();
 					startActivity(i);
-					overridePendingTransition(R.anim.fadein,R.anim.fadeout);
-				}
-				else
-				{
+					overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+				} else {
 					Intent myIntent = new Intent(SpashScreen.this, MainActivity.class);
 					finish();
 					startActivity(myIntent);
-					overridePendingTransition(R.anim.fadein,R.anim.fadeout);
+					overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 				}
 			}
 		}, 3500);

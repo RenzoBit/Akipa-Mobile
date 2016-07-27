@@ -108,16 +108,16 @@
         "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_list_section_header_background.9.png"
     },
     {
-        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_grey_normal.9.png",
-        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_grey_normal.9.png"
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_picker_item_background.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_picker_item_background.xml"
     },
     {
         "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_check_on.png",
         "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_check_on.png"
     },
     {
-        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_picker_item_background.xml",
-        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_picker_item_background.xml"
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_grey_normal.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_grey_normal.9.png"
     },
     {
         "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_picker_list_selector_disabled.9.png",

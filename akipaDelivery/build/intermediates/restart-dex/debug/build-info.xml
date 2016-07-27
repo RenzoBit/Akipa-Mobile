@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="16"
-    density="hdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
+    density="xxhdpi"
     format="7"
-    timestamp="602256882223726"
+    timestamp="612057478674244"
     token="-8852568623982171785" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1468" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1350" />
     <task
         name="verifier"
-        duration="0" />
+        duration="589" />
 
     <artifact
         location="C:\PROYECTOS\AndroidStudioProjects\Akipa-Mobile\akipaDelivery\build\outputs\apk\akipaDelivery-debug.apk"
         type="MAIN" />
 
-    <build timestamp="602256882223726" >
+    <build timestamp="612057478674244" >
         <artifact
             location="C:\PROYECTOS\AndroidStudioProjects\Akipa-Mobile\akipaDelivery\build\outputs\apk\akipaDelivery-debug.apk"
             type="MAIN" />
