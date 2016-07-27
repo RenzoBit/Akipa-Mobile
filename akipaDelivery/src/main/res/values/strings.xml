@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">Akipa Delivery</string>
+    <string name="splash_title">Freelancer.com - Bumba27</string>
+    <string name="splash_sub_title">Mobile, Web projects expert</string>
+    <string name="splash_url">www.androiddoc.com</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <color name="base_color">#380D35</color>
+    <color name="base_color_light">#7A1B74</color>
+    <color name="base_color_mid">#5D1658</color>
+    <color name="base_color_transparent">#33FFFFFF</color>
+    <color name="fb_button_color">#3B5998</color>
+
+    <string-array name="nav_drawer_items">
+        <item>Consultar Platos</item>
+        <item>Pedidos Realizados</item>
+        <item>Consultar Cobertura</item>
+        <item>Consultar Promociones</item>
+        <item>Consultar favorito</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/map_with_icon</item>
+        <item>@drawable/map_search</item>
+        <item>@drawable/book</item>
+        <item>@drawable/bell</item>
+        <item>@drawable/fev</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>

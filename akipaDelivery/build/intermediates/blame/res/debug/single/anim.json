@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\anim\\fadeout.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\anim\\fadeout.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\anim\\slide_in.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\anim\\fadein.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\anim\\fadein.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\anim\\slide_out.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\anim\\slide_up.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\anim\\image_click.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\anim\\image_click.xml"
+    }
+]

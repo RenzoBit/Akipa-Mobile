@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_grey_focused.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_button_grey_focused.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fb_icon.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\fb_icon.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_logo.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_logo.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_blue_normal.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_button_blue_normal.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_picker_magnifier.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_picker_magnifier.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_blue_focused.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_button_blue_focused.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_grey_pressed.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_button_grey_pressed.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_drawer.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_grey_normal.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_button_grey_normal.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_blue_pressed.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_button_blue_pressed.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\default_profile_pic.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\default_profile_pic.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\default_plate.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\default_plate.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_whats_hot.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\ic_whats_hot.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_inverse_icon.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_inverse_icon.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plus.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-hdpi\\plus.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_close.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\drawable-hdpi-v4\\com_facebook_close.png"
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_activity_circle_row.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_activity_circle_row.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_placepickerfragment.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_placepickerfragment.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\spash_screen.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\spash_screen.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\login_activity.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\login_activity.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_list_section_header.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_list_section_header.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_title_bar_stub.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_title_bar_stub.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_placepickerfragment_list_row.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_placepickerfragment_list_row.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_plate.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\fragment_plate.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_image.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_image.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_title_bar.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_title_bar.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_search_box.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_search_box.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_search_bar_layout.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_search_bar_layout.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\dashboard_activity.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\dashboard_activity.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\main_activity.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_activity_layout.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_login_activity_layout.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_list_row.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_list_row.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_list_item.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\drawer_list_item.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_usersettingsfragment.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_usersettingsfragment.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_friendpickerfragment.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_friendpickerfragment.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\registration_activity.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\registration_activity.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_picker_checkbox.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\exploded-aar\\Akipa-Mobile\\facebookSDK\\unspecified\\res\\layout\\com_facebook_picker_checkbox.xml"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_details_plate.xml",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\layout\\fragment_details_plate.xml"
+    }
+]

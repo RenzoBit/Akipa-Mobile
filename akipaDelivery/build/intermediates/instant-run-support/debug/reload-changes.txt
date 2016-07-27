@@ -1,0 +1,4 @@
+CHANGED,C:\PROYECTOS\AndroidStudioProjects\Akipa-Mobile\akipaDelivery\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\akipa\akipadelivery\LoginActivity$MyAsyncTaskForLogin$override.class
+CHANGED,C:\PROYECTOS\AndroidStudioProjects\Akipa-Mobile\akipaDelivery\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\akipa\akipadelivery\RegistrationActivity$MyAsyncTaskForAllEnquire$override.class
+CHANGED,C:\PROYECTOS\AndroidStudioProjects\Akipa-Mobile\akipaDelivery\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\PROYECTOS\AndroidStudioProjects\Akipa-Mobile\akipaDelivery\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\akipa\listview\utils\ReusableClass$override.class

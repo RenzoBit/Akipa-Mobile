@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_with_icon.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-xxhdpi\\map_with_icon.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_search.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-xxhdpi\\map_search.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\book.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-xxhdpi\\book.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\fev.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-xxhdpi\\fev.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bell.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\akipaDelivery\\src\\main\\res\\drawable-xxhdpi\\bell.png"
+    }
+]

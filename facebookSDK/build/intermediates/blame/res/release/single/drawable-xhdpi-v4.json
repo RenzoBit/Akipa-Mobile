@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_inverse_icon.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_inverse_icon.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_button_grey_focused.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_button_grey_focused.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_logo.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_logo.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_close.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_close.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_button_grey_normal.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_button_grey_normal.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_picker_magnifier.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_picker_magnifier.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_button_grey_pressed.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_button_grey_pressed.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_button_blue_normal.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_button_blue_normal.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_button_blue_pressed.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_button_blue_pressed.9.png"
+    },
+    {
+        "merged": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\com_facebook_button_blue_focused.9.png",
+        "source": "C:\\PROYECTOS\\AndroidStudioProjects\\Akipa-Mobile\\facebookSDK\\src\\main\\res\\drawable-xhdpi\\com_facebook_button_blue_focused.9.png"
+    }
+]
